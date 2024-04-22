@@ -1,3 +1,4 @@
+import 'package:classwork/Screens/BottomSheets.dart';
 import 'package:classwork/Screens/DrawerTransparent.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp (
       debugShowCheckedModeBanner: false,
-      home: DrawerT(),
+      home: BottomSheeets(),
     );
   }
 }

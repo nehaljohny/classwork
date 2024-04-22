@@ -8,7 +8,7 @@ class BottomSheeets extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Flutter Bottom Sheets"),
+          title: Center(child: Text("Flutter Bottom Sheets")),
         ),
         body: Column(
           children: [
