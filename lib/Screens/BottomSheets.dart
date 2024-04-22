@@ -27,7 +27,7 @@ class BottomSheeets extends StatelessWidget {
                     'Select the category',
                     style: TextStyle(
                       fontSize: 16,
-                      color: Colors.white, // Customize the text color as needed
+                      color: Colors.white,
                     ),
                   ),
                 ),
@@ -48,7 +48,7 @@ class BottomSheeets extends StatelessWidget {
                     'Help',
                     style: TextStyle(
                       fontSize: 16,
-                      color: Colors.white, // Customize the text color as needed
+                      color: Colors.white,
                     ),
                   ),
                 ),
@@ -63,14 +63,21 @@ class BottomSheeets extends StatelessWidget {
       context: context,
       builder: (context) {
         return GridView.count(
-          crossAxisCount: 3, // Display 3 columns
+          crossAxisCount: 3,
           children: const [
             ListTile(
               title: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Icon(Icons.folder,size: 80,color: Colors.lightBlueAccent,),
-                  Text("Shopping",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                  Icon(
+                    Icons.folder,
+                    size: 80,
+                    color: Colors.lightBlueAccent,
+                  ),
+                  Text(
+                    "Shopping",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
                 ],
               ),
             ),
@@ -78,8 +85,15 @@ class BottomSheeets extends StatelessWidget {
               title: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Icon(Icons.folder,size: 80,color: Colors.purpleAccent,),
-                  Text("Education",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                  Icon(
+                    Icons.folder,
+                    size: 80,
+                    color: Colors.purpleAccent,
+                  ),
+                  Text(
+                    "Education",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
                 ],
               ),
             ),
@@ -87,8 +101,15 @@ class BottomSheeets extends StatelessWidget {
               title: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Icon(Icons.folder,size: 80,color: Colors.blue,),
-                  Text("Personal",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                  Icon(
+                    Icons.folder,
+                    size: 80,
+                    color: Colors.blue,
+                  ),
+                  Text(
+                    "Personal",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
                 ],
               ),
             ),
@@ -96,8 +117,15 @@ class BottomSheeets extends StatelessWidget {
               title: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Icon(Icons.folder,size: 80,color: Colors.redAccent,),
-                  Text("Office",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                  Icon(
+                    Icons.folder,
+                    size: 80,
+                    color: Colors.redAccent,
+                  ),
+                  Text(
+                    "Office",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
                 ],
               ),
             ),
@@ -105,8 +133,15 @@ class BottomSheeets extends StatelessWidget {
               title: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Icon(Icons.folder,size: 80,color: Colors.orangeAccent,),
-                  Text("Part time",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                  Icon(
+                    Icons.folder,
+                    size: 80,
+                    color: Colors.orangeAccent,
+                  ),
+                  Text(
+                    "Part time",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
                 ],
               ),
             ),
@@ -114,8 +149,15 @@ class BottomSheeets extends StatelessWidget {
               title: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Icon(Icons.folder,size: 80,color: Colors.black54,),
-                  Text("Other",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                  Icon(
+                    Icons.folder,
+                    size: 80,
+                    color: Colors.black54,
+                  ),
+                  Text(
+                    "Other",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
                 ],
               ),
             ),
@@ -123,17 +165,21 @@ class BottomSheeets extends StatelessWidget {
               title: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Icon(Icons.create_new_folder_rounded,size: 80,color: Colors.deepOrangeAccent,),
-                  Text("New",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                  Icon(
+                    Icons.create_new_folder_rounded,
+                    size: 80,
+                    color: Colors.deepOrangeAccent,
+                  ),
+                  Text(
+                    "New",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
                 ],
               ),
             ),
-
-            // Add more ListTiles here if needed
           ],
         );
       },
     );
   }
-
 }
