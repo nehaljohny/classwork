@@ -1,10 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import '../../Model/ShoeModel.dart';
+import '../../Model/ShoeHomeModel.dart';
 import '../Widgets/shoeview.dart';
 
 class ShoeHome extends StatelessWidget {
@@ -65,15 +62,15 @@ class ShoeHome extends StatelessWidget {
               child: ListView.builder(
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
-                  itemCount: home.length,
+                  itemCount: shoelistt.length,
                   itemBuilder: (context, index) {
                     return Padding(
                       padding: const EdgeInsets.all(15.0),
                       child: ShoeView(
-                        imagepath: home[index].image,
-                        title: home[index].name,
-                        cat: home[index].category,
-                        price: home[index].price,
+                        imagepath: shoelistt[index].image,
+                        title: shoelistt[index].name,
+                        cat: shoelistt[index].category,
+                        price: shoelistt[index].price,
                       ),
                     );
                   }),
